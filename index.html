@@ -3,153 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Lab1</title>
+    <title>Lab2</title>
 </head>
 <body>
     <header >
-        <p>Hello from header
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
-        </p>
+        <p>Hello from Header</p>
         <span class="logo-holder">
-            <h2 class="logo">Hello from header
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h2>
+            <h2 class="logo" id="topLogoText">Hello from header</h2>
         </span>
     </header>
 
-    <nav>
-
-        <ul>
-            <li><a href="index.html">First Page</a></li>
-            <li><a href="page2.html">Second Page</a></li>
-            <li><a href="page3.html">Third Page</a></li>
-            <li><a href="page4.html">Fourth Page</a></li>
-            <li><a href="page5.html">Fifth Page</a></li>
-        </ul>
-
+    <nav id="nav">
+        <a href="#" onfocus="listCreator(1)" id="listCreator-1">Create list</a>
+        <div class="hidden" id="numListBlock-1">
+            <ol id="numList-1"></ol>
+            <form id="numListForm-1" onsubmit="return false;">
+                <input type="text">
+                <button onclick="addListElement(1)">Add</button>
+                <br>
+                <button id = "numListSave-1" onclick="listSaver(1)">Save</button>
+            </form>
+        </div>
     </nav>
     
     <main>
-        <article class="main-main">
-            <div>
+        <article id="main-main">
+            <div id="mainContentHolder">
                 <h1>Hello from main-main</h1>
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                
-                </p>
+                <p>Hello from main-main</p>
+                <form id="reverseForm" onsubmit="return false;">
+                    <input type="text" id="reverseInput">
+                    <button onclick="reversClick()">Reverse</button>
+                </form>
+                <form onclick="alignFunc()" onsubmit="return false;">
+                    <input type="radio" name="aligner" value="nav" id="nav-radio">
+                    <label for="nav-radio">Nav</label>
+                    <br>
+                    <input type="radio" name="aligner" value="main-main" id="main-main-radio">
+                    <label for="main-main-radio">Main-main</label>
+                    <br>
+                    <input type="radio" name="aligner" value="right-main" id="right-main-radio">
+                    <label for="right-main-radio">Right-main</label>
+                </form>
             </div>
         </article>
         <article class="under-main">
-            <p>Hello from under-mainHello from under-mainHello from under-mainHello from under-main
-                Hello from under-mainHello from under-mainHello from under-main
-                Hello from under-mainHello from under-mainHello from under-main
-                Hello from under-mainHello from under-mainHello from under-mainHello from under-main
-                Hello from under-mainHello from under-mainHello from under-main
-            </p>
+            <p>Hello from under-main</p>
         </article>
     </main>
 
+    <aside id="right-main">
+        <a href="#" onfocus="listCreator(2)" id="listCreator-2">Create list</a>
+        <div class="hidden" id="numListBlock-2">
+            <ol id="numList-2">
 
-    <aside class="right-main">
-        <p>Hello from right-main
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                Ea, blanditiis dolorum doloremque a dolores velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saepe eius ab illum blanditiis facere possimus,
-                nostrum optio reprehenderit debitis neque quae laudantium!
-                
-        </p>
+            </ol>
+            <form id="numListForm-2" onsubmit="return false;">
+                <input type="text">
+                <button onclick="addListElement(2)">Add</button>
+                <br>
+                <button id = "numListSave-2" onclick="listSaver(2)">Save</button>
+            </form>
+        </div>
     </aside>
     
     <footer>
-        <p>Some Text
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saep
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saep
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Totam, saep
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
+        <p>Hello from Footer</p>
         <div class="logo-holder">
-            <h2 class="logo">Hello from footer</h2>
-        </div>    
+            <h2 class="logo" id="botLogoText">Hello from footer</h2>
+        </div>
     </footer>
+    <script src='myScript.js'></script>
 </body>
 </html>

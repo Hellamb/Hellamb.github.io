@@ -11,17 +11,17 @@ body{
 header{
     grid-column: 1/4;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     align-items: center;
 
     background-color:yellow;
 }
-nav{
+#nav{
     display: grid;
     background-color:skyblue ;
     grid-row: 2/4;
     justify-items: center;
-    align-items: center;
+    align-content: center;
 }
 main{
 
@@ -29,29 +29,29 @@ main{
     grid-auto-rows: minmax(50px,auto);
 
 }
-.right-main{
+#right-main{
     background-color: burlywood;
     display: grid;
-    align-items: center;
+    align-content: center;
     justify-items: center;
 }
 footer{
     grid-column: 2/4;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     
-    align-items: center;
+    align-content: center;
 
     background-color: cadetblue;
 }
-.main-main{
+#main-main{
     background-color: lemonchiffon;
     padding: 2px;
     min-height: 500px;
     text-align: center;
 
     display: grid;
-    align-items: center;
+    align-content: center;
     
 }
 .under-main{
@@ -61,8 +61,10 @@ footer{
     display: grid;
     align-items: center;
 }
+.under-main p{
+    text-align: center;
+}
 .logo{
-    background-color: azure;
     padding: 10px;
     margin: 10px;
     font-size: 25px;
@@ -71,6 +73,9 @@ footer{
 .logo-holder{
     align-self: center;
     justify-self: center;
+    display: inherit;
+    background-color: azure;
+    margin:4px;
 }
 
 nav ul{
@@ -82,6 +87,15 @@ nav ul{
 }
 p{
     margin: 5px;
+}
+.hidden{
+    display:none;
+}
+#botLogoText{
+    text-align: center;
+}
+#topLogoText{
+    text-align: right;
 }
 
 
