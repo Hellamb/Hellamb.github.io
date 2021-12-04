@@ -1,101 +1,79 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-body{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: minmax(80px, auto) 1fr minmax(80px, auto);
-    /* grid-auto-rows: minmax(100px,auto); */
-}
-header{
-    grid-column: 1/4;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    align-items: center;
-
-    background-color:yellow;
-}
-#nav{
-    display: grid;
-    background-color:skyblue ;
-    grid-row: 2/4;
-    justify-items: center;
-    align-content: center;
-}
-main{
-
-    display: grid;
-    grid-auto-rows: minmax(50px,auto);
-
-}
-#right-main{
-    background-color: burlywood;
-    display: grid;
-    align-content: center;
-    justify-items: center;
-}
-footer{
-    grid-column: 2/4;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    
-    align-content: center;
-
-    background-color: cadetblue;
-}
-#main-main{
-    background-color: lemonchiffon;
-    padding: 2px;
-    min-height: 500px;
-    text-align: center;
-
-    display: grid;
-    align-content: center;
-    
-}
-.under-main{
-    background-color: coral;
-    min-height: 40px;
-
-    display: grid;
-    align-items: center;
-}
-.under-main p{
-    text-align: center;
-}
-.logo{
-    padding: 10px;
-    margin: 10px;
-    font-size: 25px;
-
-}
-.logo-holder{
-    align-self: center;
-    justify-self: center;
-    display: inherit;
-    background-color: azure;
-    margin:4px;
+body {
+    background-color: #1e1b1c;
 }
 
-nav ul{
-    font-size: 25px;
-}
-.list{
-    font-size: 25px;
-    margin-left:25px ;
-}
-p{
-    margin: 5px;
-}
 .hidden{
-    display:none;
+    display: none;
+    transition-duration: 200ms;
 }
-#botLogoText{
-    text-align: center;
+.neon-text{
+    color: #E9D1FF;
+    text-shadow: 0 0 15px #7D26FF; 
+    font-family: 'Comfortaa', cursive;
+    transition-duration: 200ms;
 }
-#topLogoText{
-    text-align: right;
+.neon-text-disabled{
+    color:#2e2e2e;
+    text-shadow: 0 0 15px black;
+    font-family: 'Comfortaa', cursive;
+    transition-duration: 200ms;
 }
 
+#start-menu-btn{
+    width: 600px;
+    height: 140px;
+    font-size: 80px;
+    border-radius: 20px;
+}
+
+#restart-btn{
+    width: 60px;
+    height: 14px;
+    font-size: 8px;
+    border-radius: 20px;
+}
+
+#start-menu .logo{
+    width: 100%;
+}
+#start-menu .line{
+    width: 100%;
+}
+
+#game-table{
+    border-collapse:separate;
+    border-spacing: 10px 10px;
+}
+#game-table img{
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width:80%;
+}
+.turn-checker:hover{
+    -webkit-filter: drop-shadow(0px 0px 10px rgb(190, 190, 190));
+    filter: drop-shadow(2px 2px 10px rgb(204, 204, 204));
+    transition-duration: 200ms;
+}
+
+.light-field{
+    background-color: #363233;
+    width: 10px;
+    height: 10px;
+    justify-items: center;
+    justify-content: center;
+}
+.dark-field{
+    background-color: #161414;
+    width: 10px;
+    height: 10px;
+}
+
+.in-range{
+    opacity: 0.5;
+}
+.in-range:hover{
+    opacity: 0.1;
+    transition-duration: 200ms;
+}
 
