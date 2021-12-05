@@ -77,3 +77,22 @@ body {
     transition-duration: 200ms;
 }
 
+@media screen and (min-width: 1200px){
+    #start-menu .logo{
+        width: 70%;
+    }
+    #start-menu .line{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+    #start-menu .logo{
+        width: 50%;
+        max-height: 200px;
+    }
+    #start-menu .line{
+        width: 50%;
+    }
+}
+
